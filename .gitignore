@@ -1,0 +1,30 @@
+
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Datasets
+dataset/
+dataset_raw/
+
+# Unnecessary training checkpoints
+checkpoint.pth
+best_model.pth
+best_model_old.pth
+
+# Model weights: allow only final ensemble models
+*.pth
+!convnext_model.pth
+!resnet_model.pth
+
+# Temporary files and secrets
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
